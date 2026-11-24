@@ -2,7 +2,7 @@
 
 HalluGuard checks whether a source passage supports an LLM-generated claim. A fine-tuned DeBERTa-v3 Large cross-encoder reads the passage and the claim together, then returns a verdict and a support score.
 
-[Demo notebook](demo/HalluGuard_Model_Showcase.ipynb) · [Sample pairs](examples/sample_pairs.csv) · [Research paper](docs/HalluGuard_Final_Research_Paper.pdf)
+[Demo notebook](demo/HalluGuard_Model_Showcase.ipynb) · [Kaggle model](https://www.kaggle.com/models/sandeshbhandari18/halluguard-deberta-claim-verifier) · [Sample pairs](examples/sample_pairs.csv) · [Research paper](docs/HalluGuard_Final_Research_Paper.pdf)
 
 ## Try an example
 
@@ -18,7 +18,7 @@ The notebook runs six examples, displays expected and predicted judgments side b
 ### Run on Kaggle
 
 1. Download [the demo notebook](demo/HalluGuard_Model_Showcase.ipynb) and import it into a new Kaggle notebook.
-2. Under **Input → Add Input → Models**, attach the HalluGuard model version shared by the project owner. Your account needs access to the selected version.
+2. Under **Input → Add Input → Models**, attach [HalluGuard DeBERTa Claim Verifier](https://www.kaggle.com/models/sandeshbhandari18/halluguard-deberta-claim-verifier). Choose its model variation and version.
 3. Run the setup cell, then run the sample table or edit the custom passage and claim. Keep `EXPORT_MODEL = False` for ordinary testing.
 
 ### Run locally
@@ -30,7 +30,7 @@ python -m pip install -r requirements.txt
 python -m notebook demo/HalluGuard_Model_Showcase.ipynb
 ```
 
-Download the trained model export from Kaggle and set `MODEL_DIR` in the setup cell to the directory containing `model.safetensors`, `config.json`, `tokenizer.json`, `tokenizer_config.json`, and `threshold_config.json`. The notebook uses a CUDA GPU when available and falls back to CPU.
+Download the trained files from the [HalluGuard model page on Kaggle](https://www.kaggle.com/models/sandeshbhandari18/halluguard-deberta-claim-verifier) and set `MODEL_DIR` in the setup cell to the directory containing `model.safetensors`, `config.json`, `tokenizer.json`, `tokenizer_config.json`, and `threshold_config.json`. The notebook uses a CUDA GPU when available and falls back to CPU.
 
 ## How it works
 
