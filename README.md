@@ -2,7 +2,7 @@
 
 HalluGuard checks whether a source passage supports an LLM-generated claim. A fine-tuned DeBERTa-v3 Large cross-encoder reads the passage and the claim together, then returns a verdict and a support score.
 
-[Demo notebook](demo/HalluGuard_Model_Showcase.ipynb) · [Kaggle model](https://www.kaggle.com/models/sandeshbhandari18/halluguard-deberta-claim-verifier) · [Sample pairs](examples/sample_pairs.csv) · [Research paper](docs/HalluGuard_Final_Research_Paper.pdf)
+[Try on Kaggle](https://www.kaggle.com/code/sandeshbhandari18/halluguard-model-showcase) · [Demo notebook](demo/HalluGuard_Model_Showcase.ipynb) · [Kaggle model](https://www.kaggle.com/models/sandeshbhandari18/halluguard-deberta-claim-verifier) · [Sample pairs](examples/sample_pairs.csv) · [Research paper](docs/HalluGuard_Final_Research_Paper.pdf)
 
 ## Try an example
 
@@ -17,8 +17,8 @@ The notebook runs six examples, displays expected and predicted judgments side b
 
 ### Run on Kaggle
 
-1. Download [the demo notebook](demo/HalluGuard_Model_Showcase.ipynb) and import it into a new Kaggle notebook.
-2. Under **Input → Add Input → Models**, attach [HalluGuard DeBERTa Claim Verifier](https://www.kaggle.com/models/sandeshbhandari18/halluguard-deberta-claim-verifier). Choose its model variation and version.
+1. Open the [Kaggle showcase](https://www.kaggle.com/code/sandeshbhandari18/halluguard-model-showcase), sign in, and choose **Copy & Edit** to run your own copy. You can also import the [GitHub notebook](demo/HalluGuard_Model_Showcase.ipynb) into Kaggle.
+2. Check **Input** for the attached model. If it is missing, use **Add Input → Models** to attach [HalluGuard DeBERTa Claim Verifier](https://www.kaggle.com/models/sandeshbhandari18/halluguard-deberta-claim-verifier).
 3. Run the setup cell, then run the sample table or edit the custom passage and claim. Keep `EXPORT_MODEL = False` for ordinary testing.
 
 ### Run locally
