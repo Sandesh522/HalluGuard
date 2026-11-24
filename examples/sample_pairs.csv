@@ -1,0 +1,7 @@
+example,premise,claim,expected_label,reason
+Date match,Napoleon was defeated at Waterloo in 1815.,Napoleon was defeated at Waterloo in 1815.,1,The passage gives the same date.
+Date contradiction,Napoleon was defeated at Waterloo in 1815.,Napoleon was defeated at Waterloo in 1820.,0,The passage gives a different date.
+Paraphrase,The library will be closed to visitors on Monday.,Visitors cannot enter the library on Monday.,1,The claim restates the passage.
+Quantity contradiction,The science club ordered 12 microscopes.,The science club ordered 20 microscopes.,0,The passage gives a different quantity.
+Missing evidence,The science club ordered 12 microscopes.,"Each microscope cost 5,000 rupees.",0,The passage does not give a price.
+Partial support,The museum opened in May 2018.,The museum opened in May 2018 and admission was free.,0,The passage supports the opening date but does not establish the admission price.

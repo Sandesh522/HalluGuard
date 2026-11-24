@@ -1,0 +1,16 @@
+.ipynb_checkpoints/
+.venv/
+__pycache__/
+.env
+.env.*
+kaggle.json
+hallucination_deberta_v3_v4/
+halluguard_inference_export/
+results/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+train_finally_lastone_new.csv
+final_test_file.csv
